@@ -1,0 +1,110 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --foreground-rgb: 0, 0, 0;
+  --background-start-rgb: 214, 219, 220;
+  --background-end-rgb: 255, 255, 255;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --foreground-rgb: 255, 255, 255;
+    --background-start-rgb: 0, 0, 0;
+    --background-end-rgb: 0, 0, 0;
+  }
+}
+
+html,
+body {
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  color: rgb(var(--foreground-rgb));
+  background: linear-gradient(to bottom,
+      transparent,
+      rgb(var(--background-end-rgb))) rgb(var(--background-start-rgb));
+}
+
+#login_header
+{
+  background-color: #027550;
+}
+
+#login_main
+{
+  height: 90vh;
+  width: 100vw;
+  background-color: #637E76;
+}
+
+#login
+{
+  height: 45vh;
+  width: 23vw;
+  color: black;
+}
+
+#login input
+{
+  width: 19.5vw;
+}
+
+/* Navigation Header */
+
+#nav_header
+{
+  background-color: #027550;
+}
+
+#Dashboard_otShell
+{
+  background-color: #637E76;
+}
+
+#Sidebar
+{
+  background-color: #027550;
+}
+
+/* Dashboard main area */
+
+#main
+{
+  width: 95%;
+}
+
+#main::-webkit-scrollbar
+{
+  display: none;
+}
+#courses_display_area
+{
+  /* border-radius: 4px; */
+  width: 87vw;
+  height: 150vh;
+  background-color: white;
+}
+
+.cousrseIT
+{
+  width: 15vw;
+  height: 18vw;
+  margin: 1vw 1vw;
+  border-radius: 4px;
+  background: #637E76;
+  display: inline-block;
+}
+
+.cousrseIT img
+{
+  width: 90%;
+  height: 65%;
+  margin: .7vw;
+
+  object-fit: cover;
+}
