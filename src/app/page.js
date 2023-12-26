@@ -1,57 +1,123 @@
-import React from 'react';
+"use client"
+import React, { useState } from 'react';
 
-function CDetails() {
+export default function Home() {
 
-    const data = [
-        { id: 1, name: 'John', age: 25 },
-        { id: 2, name: 'Jane', age: 30 },
-        { id: 3, name: 'Doe', age: 22 },
-    ];
-    return (
-        <div id='Dashboard_container' className='w-screen h-screen relative overflow-hidden'>
-            <nav id='nav_header' className=' w-screen h-20 sticky top-0 flex justify-between content-center'>
-                <h1 className='my-5 ml-5 font-bold font-serif text-4xl inline-block'>Course details</h1>
-                <div className=' border-2 border-green-300 p-7' >login/sign out</div>
-            </nav>
-            <div id='Dashboard_otShell' className=' w-screen h-screen flex '>
-                <ul id='Sidebar' className=' w-20 h-screen pt-3'>
-                    <li id='it1' className='font-bold p-7'>IT1</li>
-                    <li id='it2' className='font-bold p-7'>IT2</li>
-                    <li id='it3' className='font-bold p-7'>IT3</li>
-                    <li id='it4' className='font-bold p-7'>IT4</li>
-                </ul>
-                <div id='main' className=' p-3 mb-20 overflow-scroll'>
-                    <div id='User_info' className='w-full h-[15vw] bg-[white]'></div>
-                    <div id='Attendence' className='w-full bg-[white] my-8 flex justify-center content-center px-[2vw] py-[5vw]'>
-                        <table id='Atable' className=' border-2 border-black text-black rounded'>
-                            <thead className='rounded'>
-                                <tr className='bg-[#4adb9c] text-[#ffffff] text-[2vw] font-bold'>
-                                    <td className='px-[3vw] py-[0.5vw]'>Date</td>
-                                    <td className='px-[3vw] py-[0vw]'>Attendence</td>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                {data.map((d) => {
-                                    if (d.id % 2 == 0)
-                                        return (
-                                            <tr>
-                                                <td className='text-center font-semibold bg-[#a4f9d6] '>{d.id}</td>
-                                                <td className='text-center font-semibold bg-[#96f9d0]'>{d.name}</td>
-                                            </tr>)
-                                    else
-                                        return (
-                                            <tr>
-                                                <td className='text-center font-semibold bg-[#c6ffe6]'>{d.id}</td>
-                                                <td className='text-center font-semibold bg-[#c6ffe6]'>{d.name}</td>
-                                            </tr>)
-                                })}
-                            </tbody>
-                        </table>
-                    </div>
-                </div>
-            </div>
+  const [email, setEmail] = useState('');
+  const [password, setPassword] = useState('');
+  return (
+    <>
+      <div id='container' className=' overflow-hidden '>
+
+        <div id="login_main" className='relative flex flex-wrap justify-center content-center'>
+          <div id='login' className=' bg-white   rounded-lg'>
+            <div className='font-bold text-3xl mt-6 ml-5'>Login</div>
+            <form onSubmit={null}>
+              <input type="email" name='email' placeholder='@email' className=' border-2 border-black rounded-md py-2 px-3 mx-6 mt-10 mb-5'
+
+                onChange={(e) => setEmail(e.target.value)}
+
+              />
+              <input type="password" name='password' placeholder='password' className=' border-2 border-black rounded-md py-2 px-3 mx-6 my-5'
+                onChange={e => setPassword(e.target.value)} />
+              <button type='submit'
+                className="rounded-md bg-green-600 py-3 px-16 mx-10 mt-3 text-white font-medium"
+              >
+                Login
+              </button>
+            </form>
+
+          </div>
         </div>
-    );
+      </div>
+    </>
+  )
 }
 
-export default CDetails;
+//----------------------------------------------------------------------------------------------------------------------
+
+// "use client";
+
+// import React, { useState } from 'react';
+// import Link from 'next/link';
+// // import { useNavigate } from 'react-router-dom';
+// import { useRouter } from 'next/router';
+// // import axios from 'axios';
+
+// const axios = require("axios");
+
+// export default function Home() {
+//   const [inputs, setInputs] = useState({
+//     email: "",
+//     password: ""
+//   });
+
+//   const handleChange = (e) => {
+//     setInputs({ ...inputs, [e.target.name]: e.target.value });
+//   };
+
+//   // const navigate = useNavigate();
+ 
+
+//   const handleSubmit = async (e) => {
+//     const router2 = useRouter();
+//     e.preventDefault();
+//     try {
+//       const res = await axios.post('http://localhost:5000/login', inputs);
+//       if (res.data.login) { // if true then login or move to /page
+//         router2.push('/Dashboard');
+//       } else {
+//         alert('No record found');
+//       }
+//       console.log(res);
+//     } catch (err) {
+//       console.log(err);
+//     }
+//   };
+
+//   return (
+//     <>
+//       <div id='container' className='overflow-hidden'>
+//         <div id='login_header' className='w-screen h-20'>
+//           <h1 className='font-bold text-5xl my-4 ml-10 inline-block'>Qalam</h1>
+//           {/* Use Link or NavLink from react-router-dom */}
+//           <Link href={'/Dashboard'} className='mx-5 pb-5 font-bold'>
+//             Dashboard
+//           </Link>
+//           {/* <Link to='/Courses' className='mx-5 pb-5 font-bold'>
+//             Courses
+//           </Link> */}
+//         </div>
+//         <div id='login_main' className='relative flex flex-wrap justify-center content-center'>
+//           <div id='login' className='bg-white rounded-lg'>
+//             <div className='font-bold text-3xl mt-6 ml-5'>Login</div>
+//             <form onSubmit={handleSubmit}>
+//               <input
+//                 type='email'
+//                 placeholder='Email'
+//                 name='email'
+//                 value={inputs.email}
+//                 onChange={handleChange}
+//                 className='border-2 border-black rounded-md py-2 px-3 mx-6 mt-10 mb-5'
+//               />
+//               <input
+//                 type='password'
+//                 placeholder='Password'
+//                 name='password'
+//                 value={inputs.password}
+//                 onChange={handleChange}
+//                 className='border-2 border-black rounded-md py-2 px-3 mx-6 my-5'
+//               />
+//               <button
+//                 type='submit' // Change type to submit
+//                 className='rounded-md bg-green-600 py-3 px-16 mx-10 mt-3 text-white font-medium'
+//               >
+//                 Login
+//               </button>
+//             </form>
+//           </div>
+//         </div>
+//       </div>
+//     </>
+//   );
+// }

@@ -38,7 +38,7 @@ function Dashboard() {
 
                         {/* Courses */}
                         <div id='courses_display_area' className='py-[2vw] px-[3vw] mx-10 rounded-tl-[10px] rounded-tr-[10px] bg-[#d4e1dd]'>
-                            <h1 className='pl-[3vw] mb-[5px] font-bold text-[3vw] text-[#212221c1]'>Courses</h1>
+                            <h1 className='pl-[3vw] mb-[5px] font-bold text-[3vw] text-[#212221c1]'>Classes</h1>
                             <div id='courses_section' className='py-[1.5vw] ml-[2vw]'>
                                 <div id='course-item' className='  h-[7vw] w-[60vw] mb-[1.5vw] border-b-[2px] border-[#000000] flex justify-between
                                                                    hover:bg-stone-700 transition-all ease-in-out duration-[335ms]'

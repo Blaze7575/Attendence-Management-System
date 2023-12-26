@@ -30,81 +30,65 @@ body {
       rgb(var(--background-end-rgb))) rgb(var(--background-start-rgb));
 }
 
-#login_header
-{
-  background-color: #027550;
+#A::-webkit-scrollbar {
+  visibility: hidden;
 }
 
-#login_main
-{
+#login_main {
   height: 90vh;
   width: 100vw;
   background-color: #637E76;
 }
 
-#login
-{
+#login {
   height: 45vh;
   width: 23vw;
   color: black;
 }
 
-#login input
-{
+#login input {
   width: 19.5vw;
 }
 
 /* Navigation Header */
 
-#nav_header
-{
+#nav_header {
   background-color: #027550;
 }
 
-#Dashboard_otShell
-{
-  background-color: #637E76;
-}
-
-#Sidebar
-{
+#Sidebar {
   background-color: #027550;
 }
 
 /* Dashboard main area */
 
-#main
-{
-  width: 95%;
-}
 
-#main::-webkit-scrollbar
+/* #main::-webkit-scrollbar
 {
   display: none;
-}
-#courses_display_area
-{
-  /* border-radius: 4px; */
-  width: 87vw;
-  height: 150vh;
-  background-color: white;
-}
+} */
 
-.cousrseIT
-{
+.cousrseIT {
   width: 15vw;
-  height: 18vw;
-  margin: 1vw 1vw;
+  height: 15vw;
+  margin: 1vw auto;
   border-radius: 4px;
-  background: #637E76;
+  background: #FFFFFF;
+  border: .5px solid rgb(69, 69, 69);
   display: inline-block;
 }
 
-.cousrseIT img
+.cousrseIT:hover
 {
+  border-width: 3px;
+  border-color: rgb(46, 138, 71);
+}
+
+.cousrseIT img {
   width: 90%;
   height: 65%;
-  margin: .7vw;
+  margin: .7vw .575vw;
+  border-radius: 4px;
 
   object-fit: cover;
 }
