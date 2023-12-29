@@ -1,0 +1,3 @@
+fix up the header/navbar
+Create  a notification button
+add pages to right links
