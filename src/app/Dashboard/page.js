@@ -24,12 +24,11 @@ function Dashboard() {
                                     />
                                 </div>
                                 <div className='w-[27vw] h-full pl-[2vw]'>
-                                    <div id='filler' className='h-[7.5vw] w-full'></div>
+                                    <div id='filler' className='h-[8.3vw] w-full'></div>
                                     <div className=' w-full  font-bold text-[#dda62f] text-[2.5vw] underline '>Haider Musavi</div>
                                     <div className='inline-block text-[14px] '>CMS: 417101</div>
                                     <div className='text-[18px] font-bold '>Departmet</div>
                                     <div className='text-[14px]'>Course</div>
-                                    <div className='inline-block text-[14px]'>0326-5242449</div>
                                 </div>
                             </div>
                             <div className='w-[30vw] h-full bg-transparent mr-[5vw]'>
@@ -40,7 +39,7 @@ function Dashboard() {
                         <div id='courses_display_area' className='pb-[2vw] mx-10 rounded-tl-[15px] rounded-tr-[15px] bg-[#d4e1dd]'>
                             <div id='' className='bg-[#4a4e4d] text-[#949994c1] rounded-tl-[10px] rounded-tr-[10px] flex'>
                                 <h1 id='op-1' className='pl-[4.65vw] pt-[1.5vw] pr-[2vw] pb-[.5vw] font-bold text-[2.5vw] rounded-tl-[10px] inline-block bg-[#d4e1dd] text-[#212221c1] border-[#656565]'>
-                                    Class Name
+                                    Courses
                                 </h1>
                             </div>
                             <div id='courses_section' className='py-[4vw] ml-[5vw]'>

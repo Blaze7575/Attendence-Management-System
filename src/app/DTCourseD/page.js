@@ -9,12 +9,10 @@ function Dashboard() {
         if (elem.innerText == "P") {
             elem.style.background = "red"
             elem.innerText = "A"
-            console.log(elem.classList)
         }
-        else if (elem.style.background == "red") {
+        else if (elem.innerText == "A") {
             elem.style.background = "#187db4"
             elem.innerText = "P"
-            console.log(elem.classList)
         }
 
     }
@@ -25,15 +23,12 @@ function Dashboard() {
     ]
     let date = new Date()
 
-    // add the present button as well as add the submit button.
-
     return (
         <>
             <div id='Dashboard_container' className='relative'>
                 <div id='main' className='min-h-[96vh] w-full pt-[12vw] bg-[#185943]'>
 
                     <div id='courses_display_area' className='min-h-[35vw] mx-10 rounded-tl-[15px] rounded-tr-[15px] bg-[#d4e1dd] '>
-
                         <div id='' className='bg-[#4a4e4d] text-[#949994c1] rounded-tl-[10px] rounded-tr-[10px] flex'>
                             <h1 id='op-1' className='pl-[3.65vw] pt-[1.5vw] pr-[2vw] pb-[.5vw] font-bold text-[2.5vw] rounded-tl-[10px] inline-block bg-[#d4e1dd] text-[#212221c1] border-[#656565]'>
                                 Class Name {date.getDate() + "/" + date.getMonth() + "/" + date.getFullYear()}
