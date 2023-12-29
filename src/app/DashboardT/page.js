@@ -11,9 +11,6 @@ function Dashboard() {
         const cs1 = document.getElementById("courses_section_TodaysClasses")
         const cs2 = document.getElementById("courses_section_Classes")
 
-        // bg-[#d4e1dd] text-[#212221c1]
-        // bg-[#4a4e4d] text-[#949994c1]
-
         if(obj.target == op1)
         {
             op1.style.background = "#d4e1dd"
@@ -52,16 +49,14 @@ function Dashboard() {
                                         className=' w-[13vw] h-[13vw] mb-[0.5vw] ml-[0vw] border-[white] border-[.25vw] rounded-[50%]
                                                      object-cover object-right-top'
                                         src={'https://i.pinimg.com/736x/ef/6c/b5/ef6cb5f999116c56bb05598e8b6a38b2.jpg'}
-                                    // /VS Code/react/src/app/st-1.jpg  
+                                   
                                     />
                                 </div>
                                 <div className='w-[27vw] h-full pl-[2vw]'>
-                                    <div id='filler' className='h-[7.5vw] w-full'></div>
+                                    <div id='filler' className='h-[9.5vw] w-full'></div>
                                     <div className=' w-full  font-bold text-[#dda62f] text-[2.5vw] underline '>Dr Shams Qazi</div>
-                                    <div className='inline-block text-[14px] '>CMS: 417101</div>
-                                    <div className='text-[18px] font-bold '>Departmet</div>
+                                    <div className=' mt-[0vw] text-[18px] font-bold '>Departmet</div>
                                     <div className='text-[14px]'>Course</div>
-                                    <div className='inline-block text-[14px]'>0326-5242449</div>
                                 </div>
                             </div>
                             <div className='w-[30vw] h-full bg-transparent mr-[5vw]'>
