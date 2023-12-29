@@ -57,7 +57,7 @@ function Dashboard() {
                                             <tr className='h-[3vw] whitespace-normal'>
                                                 <td className='py-[.5vw] text-center font-semibold bg-[#e8e8e8] '>{d.id}</td>
                                                 <td className='py-[.5vw] text-center font-semibold bg-[#e8e8e8] border-l-[2px] border-[#212221c1]'>{d.id}</td>
-                                                <td className='py-[.5vw] text-center font-semibold bg-[#e8e8e8] border-l-[2px] border-[#212221c1]'>Haider Musavi son of Syed Sajjad Musavi </td>
+                                                <td className='py-[.5vw] text-center font-semibold bg-[#e8e8e8] border-l-[2px] border-[#212221c1]'>Haider Musavi </td>
                                                 <td className='py-[.5vw] text-center font-semibold bg-[#e8e8e8] border-l-[2px] border-[#212221c1]'>
                                                     <button className=' px-[2vw] py-[.5vw] rounded-[4px] bg-[#187db4] text-[#ffffff]
                                                                     hover:bg-[#3a89b4] '
