@@ -25,7 +25,6 @@ function Dashboard() {
     ]
     let date = new Date()
 
-    // add the present button as well as add the submit button.
 
     return (
         <>
