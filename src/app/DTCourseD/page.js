@@ -6,15 +6,15 @@ function Dashboard() {
 
     const markAtten = (obj) => {
         let elem = obj.target
+        const markAtten = (obj) => {
+        let elem = obj.target
         if (elem.innerText == "P") {
             elem.style.background = "red"
             elem.innerText = "A"
-            console.log(elem.classList)
         }
-        else if (elem.style.background == "red") {
+        else if (elem.innerText == "A") {
             elem.style.background = "#187db4"
             elem.innerText = "P"
-            console.log(elem.classList)
         }
 
     }
