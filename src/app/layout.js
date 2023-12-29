@@ -19,8 +19,8 @@ export default function RootLayout({ children }) {
             <div className='inline-block'>
               <h1 className='font-bold text-5xl my-4 ml-10 inline-block'>AMS</h1>
               <Link href="/Dashboard" className=' mx-5 pb-5 font-bold'>Dashboard</Link>
-              <Link href="/DashboardT">1 </Link>
-              <Link href="/DashboardT/dubious.js"> 2</Link>
+              <Link href="/DashboardT">DashboardT </Link>
+              <Link href=""></Link>
             </div>
             <div className='w-[6.5vw] mr-[5px ] flex content-center flex-wrap justify-between'>
               <Image className='inline-block w-[2vw] h-[2vw] mt-[1vw] ml-[5px]' src={require("./img1.png")} />

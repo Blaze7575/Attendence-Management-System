@@ -37,19 +37,22 @@ function Dashboard() {
                         </div>
 
                         {/* Courses */}
-                        <div id='courses_display_area' className='py-[2vw] px-[3vw] mx-10 rounded-tl-[10px] rounded-tr-[10px] bg-[#d4e1dd]'>
-                            <h1 className='pl-[3vw] mb-[5px] font-bold text-[3vw] text-[#212221c1]'>Courses</h1>
-                            <div id='courses_section' className='py-[1.5vw] ml-[2vw]'>
-                                <div id='course-item' className='  h-[7vw] w-[60vw] mb-[1.5vw] border-b-[2px] border-[#000000] flex justify-between
-                                                                   hover:bg-stone-700 transition-all ease-in-out duration-[335ms]'
-                                    onClick={()=>
-                                    {
-                                        window.location.href="/CourseS";
+                        <div id='courses_display_area' className='pb-[2vw] mx-10 rounded-tl-[15px] rounded-tr-[15px] bg-[#d4e1dd]'>
+                            <div id='' className='bg-[#4a4e4d] text-[#949994c1] rounded-tl-[10px] rounded-tr-[10px] flex'>
+                                <h1 id='op-1' className='pl-[4.65vw] pt-[1.5vw] pr-[2vw] pb-[.5vw] font-bold text-[2.5vw] rounded-tl-[10px] inline-block bg-[#d4e1dd] text-[#212221c1] border-[#656565]'>
+                                    Class Name
+                                </h1>
+                            </div>
+                            <div id='courses_section' className='py-[4vw] ml-[5vw]'>
+                                <div id='course-item' className='  h-[9vw] w-[60vw] px-[2vw] mb-[1.5vw] border-b-[2px] text-[#212221c1] border-[#000000] flex justify-between
+                                                                   hover:bg-stone-700 hover:text-white transition-all ease-in-out duration-[335ms]'
+                                    onClick={() => {
+                                        window.location.href = "/CourseS";
                                     }}
                                 >
                                     <div>
-                                        <h1 className='pt-[1vw] mb-[.75vw] font-bold text-[40px]'>Name</h1>
-                                        <div className='text-[12px]'>3rd-Semester</div>
+                                        <h1 className='pt-[2vw] mb-[.75vw] font-bold text-[40px]'>Name</h1>
+                                        <div className='text-[1vw] '>3rd-Semester</div>
                                     </div>
                                     <div className='flex justify-center content-center flex-wrap'>
                                         <div>A%</div>

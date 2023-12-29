@@ -26,7 +26,7 @@ function CDetails() {
                     </h2>
                 </div>
                 <div id='Attendence' className='w-full min-h-[25vw] mt-8 rounded-tl-[10px] rounded-bl-[10px] bg-[white] flex flex-wrap grow-0 shrink-0'>
-                    <table id='Atable' className='mt-[2vw] mb-[6vw] ml-[5vw]  text-black'>
+                    <table id='Atable' className='mt-[2vw] mb-[6vw] ml-[5vw]  text-[#212221c1]'>
                         <thead>
                             <tr className='bg-[#1c6e40] text-[#ffffff] text-[2vw] font-bold border-b-[2px] border-[#bebebe2f] '>
                                 <td className='px-[3vw] pt-[1vw] pb-[0.25vw]'>Date</td>
