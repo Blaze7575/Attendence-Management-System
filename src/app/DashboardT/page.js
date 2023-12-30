@@ -142,7 +142,7 @@ function Dashboard() {
                                                                  text-[#212221c1]  transition-all ease-in-out duration-[335ms] 
                                                                  hover:bg-red-600 hover:text-[#bec4be]'
                                     onClick={() => {
-                                        window.location.href = "/DTCourseD";
+                                        window.location.href = "/TClassD";
                                     }}
                                 >
                                     <div className=' pt-[2vw]'>
@@ -157,7 +157,7 @@ function Dashboard() {
                                                                  text-[#212221c1]  transition-all ease-in-out duration-[335ms] 
                                                                  hover:bg-red-600 hover:text-[#bec4be]'
                                     onClick={() => {
-                                        window.location.href = "/DTCourseD";
+                                        window.location.href = "/TClassD";
                                     }}
                                 >
                                     <div className=' pt-[2vw]'>
@@ -172,7 +172,7 @@ function Dashboard() {
                                                                  text-[#212221c1]  transition-all ease-in-out duration-[335ms] 
                                                                  hover:bg-red-600 hover:text-[#bec4be]'
                                     onClick={() => {
-                                        window.location.href = "/DTCourseD";
+                                        window.location.href = "/TClassD";
                                     }}
                                 >
                                     <div className=' pt-[2vw]'>
@@ -187,7 +187,7 @@ function Dashboard() {
                                                                  text-[#212221c1]  transition-all ease-in-out duration-[335ms] 
                                                                  hover:bg-red-600 hover:text-[#bec4be]'
                                     onClick={() => {
-                                        window.location.href = "/CourseS";
+                                        window.location.href = "/TClassD";
                                     }}
                                 >
                                     <div className=' pt-[2vw]'>
