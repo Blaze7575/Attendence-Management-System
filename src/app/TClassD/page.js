@@ -25,7 +25,7 @@ function Dashboard() {
 
                         <div id='' className='bg-[#4a4e4d] text-[#949994c1] rounded-tl-[10px] rounded-tr-[10px] flex'>
                             <h1 id='op-1' className='pl-[3.65vw] pt-[1.5vw] pr-[2vw] pb-[.5vw] font-bold text-[2.5vw] rounded-tl-[10px] inline-block bg-[#d4e1dd] text-[#212221c1] border-[#656565]'>
-                                Class Name {date.getDate() + "/" + date.getMonth() + "/" + date.getFullYear()}
+                                Class Name {date.getDate() + "/" + (date.getMonth() + 1) +  "/" + date.getFullYear()}
                             </h1>
                         </div>
 

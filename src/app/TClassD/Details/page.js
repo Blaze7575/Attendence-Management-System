@@ -16,10 +16,10 @@ function CDetails() {
                 <div id='Attendence' className=' min-h-[25vw] pb-[5vw] mx-10 rounded-tl-[15px] rounded-tr-[15px] bg-[#d4e1dd]'>
                     <div id='' className='bg-[#4a4e4d]   rounded-tl-[15px] rounded-tr-[10px] flex'>
                         <div className='w-[27vw] h-full pl-[3vw] py-[1vw] text-[1.25vw] font-medium bg-[#d4e1dd] text-[#212221c1] rounded-tl-[15px]'>
-                            <span className='font-bold ml-[]'>Name: </span><span>Haider Musavi</span><br/>
-                            <span className='font-bold ml-[]'>S_id: </span><span>417101</span><br/>
-                            <span className='font-bold ml-[]'>Departmet: </span><span>SEECS</span><br/>
-                            <span className='font-bold ml-[]'>Course: </span><span>BSCS</span><br/>
+                            <span className='font-bold mr-[.5vw]'>Name: </span><span>Haider Musavi</span><br/>
+                            <span className='font-bold mr-[.5vw]'>S_id: </span><span>417101</span><br/>
+                            <span className='font-bold mr-[.5vw]'>Departmet: </span><span>SEECS</span><br/>
+                            <span className='font-bold mr-[.5vw]'>Course: </span><span>BSCS</span><br/>
                             {/* design the student info */}
                         </div>
                     </div>

@@ -19,6 +19,10 @@ function Dashboard() {
 
     }
 
+    const saveAtten = () => {
+
+    }
+
     let i = 0
     let data = [
         { id: 1, name: "Haider" }, { id: 2, name: "Haider htftyfu hgjyguggghg hjgygjhg gjhg" }
@@ -30,9 +34,9 @@ function Dashboard() {
     return (
         <>
             <div id='Dashboard_container' className='relative'>
-                <div id='main' className='min-h-[96vh] w-full pt-[12vw] bg-[#185943]'>
+                <div id='main' className='min-h-[96vh] w-full pt-[12vw] pb-[5vw] bg-[#185943]'>
 
-                    <div id='courses_display_area' className='min-h-[35vw] mx-10 rounded-tl-[15px] rounded-tr-[15px] bg-[#d4e1dd] '>
+                    <div id='courses_display_area' className='min-h-[40vw] mx-10 rounded-tl-[15px] rounded-tr-[15px] bg-[#d4e1dd] relative'>
 
                         <div id='' className='bg-[#4a4e4d] text-[#949994c1] rounded-tl-[10px] rounded-tr-[10px] flex'>
                             <h1 id='op-1' className='pl-[3.65vw] pt-[1.5vw] pr-[2vw] pb-[.5vw] font-bold text-[2.5vw] rounded-tl-[10px] inline-block bg-[#d4e1dd] text-[#212221c1] border-[#656565]'>
@@ -40,7 +44,7 @@ function Dashboard() {
                             </h1>
                         </div>
 
-                        <table className='mt-[7vw] ml-[10vw] text-[#212221c1]'>
+                        <table className='mt-[7vw] ml-[10vw] mb-[3vw] text-[#212221c1] '>
                             <thead>
                                 <tr className='bg-[#1c6e40] text-[#ffffff] text-[2vw] font-[600] border-b-[2px] border-[#bebebe2f] '>
                                     <td className='px-[2vw] pt-[1vw] pb-[0.25vw]'>#</td>
@@ -87,11 +91,11 @@ function Dashboard() {
                             </tbody>
                         </table>
 
-
-                        <div id='' className='min-h-[30vw] pl-[1vw] pt-[5vw] ml-[2vw] relative flex flex-wrap'>
-
-                        </div>
-
+                        <button className='px-[3vw] py-[.7vw] ml-[49vw] rounded-[4px] bg-[#185943] '
+                            onClick={saveAtten}
+                        >
+                            Save
+                        </button>
 
                     </div>
                 </div>

@@ -20,7 +20,7 @@ export default function RootLayout({ children }) {
               <h1 className='font-bold text-5xl my-4 ml-10 inline-block'>AMS</h1>
               <Link id='lk1' href="/DashboardS" className=' mx-5 pb-5 font-bold'>Dashboard</Link>
               <Link id='lk2' href="/DashboardT">DashboardT </Link>
-              <Link id='lk3' href=""></Link>
+              <Link id='lk3' href="/DashboardT">Home</Link>
             </div>
             <div className='w-[6.5vw] mr-[5px ] flex content-center flex-wrap justify-between'>
               <Image className='inline-block w-[2vw] h-[2vw] mt-[1vw] ml-[5px]' src={require("./img1.png")} />

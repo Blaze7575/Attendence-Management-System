@@ -92,3 +92,8 @@ body {
 
   object-fit: cover;
 }
+
+#msg::-webkit-scrollbar
+{
+  display: none;
+}
